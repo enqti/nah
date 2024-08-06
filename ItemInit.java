@@ -7,8 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ItemInit {
-
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, customing.MODID);
 
-    public static final RegistryObject<Item> reinforced_iron = ITEMS.register("reinforced_iron", () -> new Item(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> reinforced_iron = ITEMS.register("reinforced_iron", () -> new Item(new Item.Properties()));
 }
